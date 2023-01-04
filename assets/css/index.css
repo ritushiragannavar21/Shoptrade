@@ -116,9 +116,10 @@ body{
 .text-with-background{
     background: #ED4E08;
     margin-top: 85px;
-    height: 431px;
+    min-height: 431px;
     padding-left: 109px;
     padding-right: 136px;
+    padding-bottom: 40px;
 }
 .text-with-background p, .text-with-background a{
     color: #FFFFFF;
@@ -185,7 +186,8 @@ body{
 }
 .six-positions{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
+    column-gap: 65px;
 }
 .position-grid{
     background: #F8F8F8;
@@ -267,6 +269,7 @@ body{
     margin-top: 60px;
     text-align: center;
     margin-bottom: 75px;
+    padding: 0 20px;
 }
 .txt1, .txt2{
     color: #FFFFFF;
@@ -289,3 +292,6 @@ body{
 
 /* --------------------media query----------------- */
 
+@media only screen and (max-width: 768px){
+
+}
