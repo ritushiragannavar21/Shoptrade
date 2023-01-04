@@ -1,0 +1,288 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+:root{
+    --weight-500:500;
+    --weight-600:600;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+body{   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+.center-property{
+    display: flex;
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.container{
+    max-width: 1238px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* -----------------shoptrade logo section----------------- */
+.logo{
+    margin-top: 45px;
+}
+
+/* ---------------Design and images two section container---------- */
+.flex-container{
+    width: 100%;
+    display: flex;
+    min-height: 600px;
+    margin-top: 25px;
+}
+ .image-part{
+    width: 50%;
+}
+.text-part {
+    padding-right: 100px;
+    width: 60%;
+}
+.image-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-part h1{
+    font-size: 70px;
+    line-height: 105px;
+    margin-top: 95px;
+}
+.text-part h2{
+    font-size: 40px;
+    line-height: 60px;
+}
+.text-part p{
+    font-weight: var(--weight-500);
+    font-size: 22px;
+    line-height: 33px;
+    color: #5B5B5B;
+    margin-top: 37px;
+}
+.view{
+    background: #ED4E08;
+    border-radius: 10px;
+    width: 367px;
+    text-align: center;
+    
+    height: 78px;
+    margin-top: 41px;
+}
+.view a{
+    text-decoration: none;
+    color: #FFFFFF;
+    weight:var(--weight-600)
+}
+.view svg{
+    padding-left: 11px;
+    padding-top: 3px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+/* --------------------text with background color---------------- */
+.text-with-background{
+    background: #ED4E08;
+    margin-top: 85px;
+    height: 431px;
+    padding-left: 109px;
+    padding-right: 136px;
+}
+.text-with-background p, .text-with-background a{
+    color: #FFFFFF;
+}
+.text1{
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 66px;
+}
+.text2{
+    line-height: 33px;
+    font-size: 22px;
+    font-weight: var(--weight-500);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.text3{
+    padding-right: 9px;
+    font-size: 25px;
+    line-height: 38px;
+    text-decoration-line: underline;
+}
+
+/* ---------Take the next big leap in your career!  text section------------- */
+.career-text-part{
+    margin-top: 50px;
+}
+.career{
+    font-size: 40px;
+    line-height: 60px;
+}
+.career-desc, .hiring-location{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: var(--weight-500);
+}
+.career-desc{
+    margin-top: 15px;
+}
+.hiring-location{
+    margin-top: 40px;
+}
+.hiring-location span{
+    font-weight: 700;
+}
+.hiring-position{
+    margin-top: 33px;
+}
+.feature-Design-Engineer{
+    display: flex;
+}
+.feature-Design-Engineer p{
+    margin-left: 94px;
+    
+    width: 194px;
+    height: 63px;
+    text-align: center;
+   
+}
+.feature-Design-Engineer p.active{
+    box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+.six-positions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.position-grid{
+    background: #F8F8F8;
+    border-radius: 10px;
+    width: 351px;
+    height: 145px;
+    margin-top: 51px;
+}
+.heading,.location{
+    font-weight: var(--weight-500);
+    margin-left: 29px;
+    margin-right: 112px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.heading{   
+    font-size: 20px;  
+}
+.location{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #7E7E7E;
+    margin-left: 29px;
+}
+
+/* ---------why you wil love it text with background color  -------- */
+.sub-container{
+    margin-left: 109px;
+    margin-right: 94px;
+}
+.reason-to-love-shoptrade{
+    background: #000000;
+    min-height: 718px;
+    margin-top: 59px;
+    padding-bottom: 76px;
+}
+.head{
+    color: #FFFFFF;
+    font-size: 40px;
+    padding-top: 50px;
+    line-height: 60px;
+}
+
+.six-option{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(340px, 1fr));
+    column-gap: 108px;
+    margin-top: 69px;
+    row-gap: 33px;
+  
+}
+.six-option-txt1{
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 10px;
+    color: white;
+   font-weight: var(--weight-600);
+   white-space: nowrap;
+}
+.six-option-txt2{
+    font-weight: var(--weight-500);
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 27px;
+    color:white;
+}
+
+/*  ---------------employ and job application (testimonial)---------------  */
+.job-application{
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 50px;
+}
+/* ------------we cant wait to see your application text--------------- */
+.background-color{
+    background: #ED4E08;
+    border-radius: 20px;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+.txt1, .txt2{
+    color: #FFFFFF;
+}
+.txt1{
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 56px;
+}
+.txt2{
+    font-weight: var(--weight-500);
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    padding-bottom: 56px;
+}
+.txt2 span a{
+    color: #000000;
+}
