@@ -21,6 +21,8 @@ footer, header, hgroup, menu, nav, section {
 :root{
     --weight-500:500;
     --weight-600:600;
+    --white-color:#FFFFFF;
+    --orange-color:#ED4E08;
 }
 body {
 	line-height: 1;
@@ -52,9 +54,19 @@ body{
 /* -----------------shoptrade logo section----------------- */
 .logo{
     margin-top: 45px;
+    width: 260px;
+    height: 64.62px;
 }
 
 /* ---------------Design and images two section container---------- */
+.text-with-background p, .text-with-background a,.location:hover,.head,
+.six-option-txt1,.six-option-txt2,.txt1, .txt2{
+    color: var(--white-color);
+}
+
+.view,a:hover,.text-with-background{
+    color: var(--orange-color);
+}
 .flex-container{
     width: 100%;
     display: flex;
@@ -81,6 +93,7 @@ body{
 .text-part h2{
     font-size: 40px;
     line-height: 60px;
+    font-weight:var(--weight-600);
 }
 .text-part p{
     font-weight: var(--weight-500);
@@ -90,19 +103,25 @@ body{
     margin-top: 37px;
 }
 .view{
-    background: #ED4E08;
+    background: var(--orange-color);
+    border: 1px solid #ED4E08;
     border-radius: 10px;
     width: 367px;
     text-align: center;
-    
+    font-size: 25px;
     height: 78px;
     margin-top: 41px;
 }
+.view:hover{
+    border: 1px solid #ED4E08;
+    text-decoration: underline;
+}
 .view a{
     text-decoration: none;
-    color: #FFFFFF;
-    weight:var(--weight-600)
+    font-weight:var(--weight-600);
+    color: var(--white-color);
 }
+
 .view svg{
     padding-left: 11px;
     padding-top: 3px;
@@ -114,14 +133,11 @@ body{
 
 /* --------------------text with background color---------------- */
 .text-with-background{
-    background: #ED4E08;
     margin-top: 85px;
-    height: 431px;
+    min-height: 431px;
     padding-left: 109px;
     padding-right: 136px;
-}
-.text-with-background p, .text-with-background a{
-    color: #FFFFFF;
+    
 }
 .text1{
     font-size: 40px;
@@ -140,6 +156,9 @@ body{
     font-size: 25px;
     line-height: 38px;
     text-decoration-line: underline;
+}
+.text3:hover{
+    text-decoration: none;
 }
 
 /* ---------Take the next big leap in your career!  text section------------- */
@@ -172,27 +191,41 @@ body{
 }
 .feature-Design-Engineer p{
     margin-left: 94px;
-    
+    font-size: 20px;
     width: 194px;
     height: 63px;
     text-align: center;
-   
+   font-weight: var(--weight-600);
 }
-.feature-Design-Engineer p.active{
+.two-design , .one-design{
+    display: flex;
+}
+.tablinks.active{
     box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
     border-radius: 10px;
-    background: #FFFFFF;
+    /* color: var(--white-color); */
 }
 .six-positions{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
+    column-gap: 65px;
 }
 .position-grid{
     background: #F8F8F8;
     border-radius: 10px;
-    width: 351px;
-    height: 145px;
+    min-height: 145px;
     margin-top: 51px;
+}
+.position-grid{
+    display: none;
+}
+.position-grid.tab-content-active{
+    display: block;
+}
+.position-grid:hover,.location:hover{
+    background: var(--orange-color);
+    color: var(--white-color);
+   
 }
 .heading,.location{
     font-weight: var(--weight-500);
@@ -201,6 +234,7 @@ body{
     line-height: 30px;
     margin-top: 20px;
 }
+
 .heading{   
     font-size: 20px;  
 }
@@ -224,7 +258,6 @@ body{
     padding-bottom: 76px;
 }
 .head{
-    color: #FFFFFF;
     font-size: 40px;
     padding-top: 50px;
     line-height: 60px;
@@ -242,7 +275,6 @@ body{
     font-size: 22px;
     line-height: 33px;
     margin-top: 10px;
-    color: white;
    font-weight: var(--weight-600);
    white-space: nowrap;
 }
@@ -251,7 +283,6 @@ body{
     font-size: 18px;
     margin-top: 20px;
     line-height: 27px;
-    color:white;
 }
 
 /*  ---------------employ and job application (testimonial)---------------  */
@@ -267,9 +298,7 @@ body{
     margin-top: 60px;
     text-align: center;
     margin-bottom: 75px;
-}
-.txt1, .txt2{
-    color: #FFFFFF;
+    padding: 0 20px;
 }
 .txt1{
     font-size: 40px;
@@ -285,4 +314,213 @@ body{
 }
 .txt2 span a{
     color: #000000;
+}
+.txt2 span a:hover{
+    text-decoration: none;
+}
+
+/* --------------------media query----------------- */
+
+@media only screen and (max-width: 980px){
+    .text-part{
+        padding-right: 20px;
+    }
+    .text-part h1{
+        font-size: 60px;
+    }
+    .text-part p{
+        font-size: 18px;
+    }
+    .text-part h2{
+        font-size: 30px;
+    }
+    
+    .feature-Design-Engineer p{
+        margin-left: 45px;
+    }
+}
+
+/* --------------media query at 768px-------------- */
+@media only screen and (max-width: 768px){
+    .logo{
+        margin-top: 20px;
+        width: 185px;
+        height: 45.98px;
+    }
+    .common{
+        text-align: center;
+    }
+    .logo-class{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .text-part , .image-part{
+        width: 100%;
+    }
+    .image-part{
+         padding-top: 10px ;
+       /* margin: auto;  */ 
+    }
+    .text-part h1{
+        margin-top: 30px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+    .text-part p{
+        margin-top: 15px;
+    }
+    .view{
+        margin-top: 20px;
+    }
+    .text-with-background{
+        margin-top: 46px;
+        padding-bottom: 0px !important;
+        padding-left: 30px;
+        padding-right: 42px;
+        background-color: var(--orange-color);
+        color:var(--white-color);
+    }
+    .text1{
+        padding-top: 25px;
+    }
+    .text2{
+        margin: 15px 0 10px;
+    }
+    .career-text-part{
+        margin-top: 20px;
+    }
+    .hiring-location{
+        margin-top: 11px;
+    }
+    .career-desc{
+        padding-right: 20px;
+    }
+    .sub-container{
+        margin-right: 34px;
+    }
+    .feature-Design-Engineer p{
+        margin-left: 20px;
+    }
+    .head{
+        font-size: 35px;
+        padding-top: 25px;
+    }
+    .six-option{
+    margin-top: 40px;   
+    }
+    .six-option-txt2{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+    .sub-container{
+        margin-left: 30px;
+    }
+    .job-application{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .background-color{
+        margin-top: 25px;
+    }
+    .view{
+        font-size: 20px;
+    }
+    .six-option-txt1{
+        margin-top: 13px;
+        font-size: 18px;
+    }
+    .feature-Design-Engineer{
+        flex-direction: column;
+    }
+    .one-design{
+        margin-top: 30px;
+    }
+    .two-design{
+        margin-top: 10px;
+    }
+}
+
+/* --------------media query at 520px-------------- */
+@media only screen and (max-width: 520px){
+    .text-part h2{
+        font-size: 25px;
+        text-align: center;
+        line-height: 38px;
+        margin-top: 10px;
+    }
+    .logo{
+        margin-top: 26px;
+    }
+    .text-part p,.text2,.text3{
+        font-size: 15px;
+        /* text-align: center; */
+    }
+    .view{
+        width: 255px;
+        height: 54px;
+        font-size: 15px;
+    }
+    .text1{
+        font-size: 20px;
+    }
+    .text-with-background{
+        min-height: 350px;
+        padding-bottom: 34px !important;
+    }
+    .career{
+        font-size: 20px;
+    }
+    .career-desc,.hiring-location,.heading{
+        font-size: 15px;
+    }
+    .hiring-position{
+        margin-top: 20px;
+    }
+    .position-grid{
+        margin-top: 30px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .position-grid{
+        height: 105px;
+        margin-top: 20px;
+    }
+    .reason-to-love-shoptrade{
+        margin-top: 30px;
+        padding-bottom: 25px;
+    }
+    .head{
+        font-size: 20px;
+    }
+    .job-application{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .txt1{
+        font-size: 25px;
+        padding-top: 27px;
+        line-height: 38px;
+    }
+    .txt2{
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 26px;
+    }
+    .career{
+        line-height: 30px;
+    }
+    .six-positions{
+        grid-template-columns: repeat(auto-fill , minmax(270px, 1fr));
+    }
+    .six-option-txt1{
+        white-space: normal;
+    }
+    .six-option{
+        grid-template-columns: repeat(auto-fill , minmax(240px, 1fr));
+    }
 }
