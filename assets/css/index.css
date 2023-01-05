@@ -137,7 +137,7 @@ body{
     min-height: 431px;
     padding-left: 109px;
     padding-right: 136px;
-    
+    background: var(--orange-color);
 }
 .text1{
     font-size: 40px;
@@ -215,8 +215,6 @@ body{
     border-radius: 10px;
     min-height: 145px;
     margin-top: 51px;
-}
-.position-grid{
     display: none;
 }
 .position-grid.tab-content-active{
@@ -331,10 +329,23 @@ body{
     .text-part p{
         font-size: 18px;
     }
+    .logo-class{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .text-part , .image-part{
+        width: 100%;
+    }
     .text-part h2{
         font-size: 30px;
     }
-    
+    .text-with-background{
+        padding-bottom: 30px !important;
+    }
     .feature-Design-Engineer p{
         margin-left: 45px;
     }
@@ -349,17 +360,6 @@ body{
     }
     .common{
         text-align: center;
-    }
-    .logo-class{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    .flex-container{
-        flex-direction: column-reverse;
-    }
-    .text-part , .image-part{
-        width: 100%;
     }
     .image-part{
          padding-top: 10px ;
@@ -376,7 +376,9 @@ body{
     .view{
         margin-top: 20px;
         width:280px ;
+        margin: 20px auto 0px;
         height:65px ;
+        font-size: 20px;
     }
     .view a{
         font-size: 20px;
@@ -431,9 +433,6 @@ body{
     .background-color{
         margin-top: 25px;
     }
-    .view{
-        font-size: 20px;
-    }
     .six-option-txt1{
         margin-top: 13px;
         font-size: 18px;
@@ -462,7 +461,6 @@ body{
     }
     .text-part p,.text2,.text3{
         font-size: 15px;
-        /* text-align: center; */
     }
     .view{
         width: 255px;

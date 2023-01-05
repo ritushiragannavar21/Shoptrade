@@ -11,25 +11,6 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Shoptrade</title>
 
-    <script>
-        const tabs=document.querySelectorAll('.tablinks');
-        const tabcontent=document.querySelectorAll('.position-grid');
-        for(let i=0; i<tabs.length;i++){
- 
-        tabs[i].addEventListener("click",()=>{
-        for(let j=0;j<tabcontent.length;j++){
-            tabcontent[j].classList.remove('tab-content-active');
-        }
-        for(let k=0;k<tabs.length;k++){
-            tabs[k].classList.remove('active');
-        }
-        tabcontent[i].classList.add('tab-content-active');
-        tabs[i].classList.add('active');
-    })
-}
-    </script>
-
-
 </head>
 <body>
     <!-----------------logo section------------------ -->
@@ -130,17 +111,30 @@
                         <p class="heading" >Junior Frontend Developer</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid ">
-                        <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
-                        <p class="location" >Banglore, India</p>
-                    </div>
-                    <div class="position-grid ">
-                        <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
-                        <p class="location" >Banglore, India</p>
-                    </div>
+                    
 
                 </div>
-                
+                <div class="six-position">
+                    <div class="position-grid ">
+                        <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
+                        <p class="location" >Banglore, India</p>
+                    </div>
+                    <div class="position-grid ">
+                        <p class="heading" >Junior Frontend Developer</p>
+                        <p class="location" >Banglore, India</p>
+                    </div>
+                </div>
+
+                <div class="six-position">
+                    <div class="position-grid ">
+                        <p class="heading" >Senior UI Designer</p>
+                        <p class="location" >Banglore, India</p>
+                    </div>
+                    <div class="position-grid ">
+                        <p class="heading" >Software Engineer: Python/Django</p>
+                        <p class="location" >Banglore, India</p>
+                    </div>
+                </div>
 
                 <div>
 
@@ -228,6 +222,6 @@
         </div>
     </section>
     <!-- ------------we cant wait to see your application text end----------------- -->
-
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
