@@ -10,6 +10,26 @@
 
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Shoptrade</title>
+
+    <script>
+        const tabs=document.querySelectorAll('.tablinks');
+        const tabcontent=document.querySelectorAll('.position-grid');
+        for(let i=0; i<tabs.length;i++){
+ 
+        tabs[i].addEventListener("click",()=>{
+        for(let j=0;j<tabcontent.length;j++){
+            tabcontent[j].classList.remove('tab-content-active');
+        }
+        for(let k=0;k<tabs.length;k++){
+            tabs[k].classList.remove('active');
+        }
+        tabcontent[i].classList.add('tab-content-active');
+        tabs[i].classList.add('active');
+    })
+}
+    </script>
+
+
 </head>
 <body>
     <!-----------------logo section------------------ -->
@@ -78,38 +98,51 @@
             <div class="hiring-position">
                 <div class="feature-Design-Engineer ">
                     <div class="two-design">
-                        <p class="Feature center-property justify-center active" >Featured</p>
-                        <p class="Design center-property justify-center" >Design (02)</p>
+                        <p class="Feature tablinks center-property justify-center active" >Featured</p>
+                        <p class="Design tablinks center-property justify-center" >Design (02)</p>
                     </div>
                     <div class="one-design">
-                        <p class="Engineering center-property justify-center" >Engineering (04)</p>
+                        <p class="Engineering tablinks  center-property justify-center" >Engineering (04)</p>
                     </div>
                 </div>
                 <div class="six-positions">
-                    <div class="position-grid">
+                    <div class="position-grid tab-content-active">
                         <p class="heading" >Mid - level product designer</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid">
+                    <div class="position-grid tab-content-active">
                         <p class="heading" >Senior UI Designer</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid">
+                    <div class="position-grid tab-content-active">
                         <p class="heading" >Software Engineer: Python/Django</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid">
+                    <div class="position-grid tab-content-active">
                         <p class="heading" >Junior Frontend Developer</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid">
+                    <div class="position-grid tab-content-active">
                         <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
                         <p class="location" >Banglore, India</p>
                     </div>
-                    <div class="position-grid">
-                        <p class="heading" >Senior Frontend Manager</p>
+                    <div class="position-grid tab-content-active">
+                        <p class="heading" >Junior Frontend Developer</p>
                         <p class="location" >Banglore, India</p>
                     </div>
+
+                </div>
+                <div class="position-grid ">
+                    <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
+                    <p class="location" >Banglore, India</p>
+                </div>
+                <div class="position-grid ">
+                    <p class="heading" >Mid Level - Frontend Engineer (Remote)</p>
+                    <p class="location" >Banglore, India</p>
+                </div>
+
+                <div>
+
                 </div>
             </div>
 
