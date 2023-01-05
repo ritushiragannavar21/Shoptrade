@@ -375,6 +375,11 @@ body{
     }
     .view{
         margin-top: 20px;
+        width:280px ;
+        height:65px ;
+    }
+    .view a{
+        font-size: 20px;
     }
     .text-with-background{
         margin-top: 46px;
