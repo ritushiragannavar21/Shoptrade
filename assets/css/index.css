@@ -52,6 +52,8 @@ body{
 /* -----------------shoptrade logo section----------------- */
 .logo{
     margin-top: 45px;
+    width: 260px;
+    height: 64.62px;
 }
 
 /* ---------------Design and images two section container---------- */
@@ -94,7 +96,7 @@ body{
     border-radius: 10px;
     width: 367px;
     text-align: center;
-    
+    font-size: 25px;
     height: 78px;
     margin-top: 41px;
 }
@@ -179,6 +181,9 @@ body{
     text-align: center;
    
 }
+.two-design , .one-design{
+    display: flex;
+}
 .feature-Design-Engineer p.active{
     box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
     border-radius: 10px;
@@ -192,8 +197,8 @@ body{
 .position-grid{
     background: #F8F8F8;
     border-radius: 10px;
-    width: 351px;
-    height: 145px;
+    /* width: 351px; */
+    min-height: 145px;
     margin-top: 51px;
 }
 .heading,.location{
@@ -292,6 +297,194 @@ body{
 
 /* --------------------media query----------------- */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 980px){
+    .text-part{
+        padding-right: 20px;
+    }
+    .text-part h1{
+        font-size: 60px;
+    }
+    .text-part p{
+        font-size: 18px;
+    }
+    .text-part h2{
+        font-size: 30px;
+    }
+    
+    .feature-Design-Engineer p{
+        margin-left: 45px;
+    }
+}
 
+/* --------------media query at 768px-------------- */
+@media only screen and (max-width: 768px){
+    .logo{
+        margin-top: 20px;
+        width: 185px;
+        height: 45.98px;
+    }
+    .common{
+        text-align: center;
+    }
+    .logo-class{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .text-part , .image-part{
+        width: 100%;
+    }
+    .image-part{
+         padding-top: 10px ;
+       /* margin: auto;  */ 
+    }
+    .text-part h1{
+        margin-top: 40px;
+    }
+    .text-part p{
+        margin-top: 15px;
+    }
+    .view{
+        margin-top: 20px;
+    }
+    .text-with-background{
+        margin-top: 46px;
+        padding-bottom: 0px !important;
+    }
+    .text1{
+        padding-top: 25px;
+    }
+    .text2{
+        margin: 15px 0 10px;
+    }
+    .career-text-part{
+        margin-top: 20px;
+    }
+    .hiring-location{
+        margin-top: 11px;
+    }
+    .career-desc{
+        padding-right: 20px;
+    }
+    .sub-container{
+        margin-right: 34px;
+    }
+    .text-with-background{
+        padding-left: 30px;
+        padding-right: 42px;
+    }
+    .feature-Design-Engineer p{
+        margin-left: 20px;
+    }
+    .head{
+        font-size: 35px;
+        padding-top: 25px;
+    }
+    .six-option{
+    margin-top: 40px;   
+    }
+    .six-option-txt2{
+        margin-top: 12px;
+    }
+    .sub-container{
+        margin-left: 30px;
+    }
+    .job-application{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .background-color{
+        margin-top: 25px;
+    }
+    .view{
+        font-size: 20px;
+    }
+    .six-option-txt1{
+        margin-top: 13px;
+    }
+    .feature-Design-Engineer{
+        flex-direction: column;
+    }
+    .one-design{
+        margin-top: 30px;
+    }
+
+}
+
+/* --------------media query at 520px-------------- */
+@media only screen and (max-width: 520px){
+    .text-part h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .text-part p,.text2,.text3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .view{
+        width: 255px;
+        height: 54px;
+        font-size: 15px;
+    }
+    .text1{
+        font-size: 20px;
+    }
+    .text-with-background{
+        min-height: 350px;
+    }
+    .career{
+        font-size: 20px;
+    }
+    .career-desc,.hiring-location,.heading{
+        font-size: 15px;
+    }
+    .hiring-position{
+        margin-top: 20px;
+    }
+    .position-grid{
+        margin-top: 30px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .position-grid{
+        height: 105px;
+        margin-top: 20px;
+    }
+    .reason-to-love-shoptrade{
+        margin-top: 30px;
+        padding-bottom: 25px;
+    }
+    .head{
+        font-size: 20px;
+    }
+    .job-application{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .txt1{
+        font-size: 25px;
+        padding-top: 27px;
+        line-height: 38px;
+    }
+    .txt2{
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 26px;
+    }
+    .career{
+        line-height: 30px;
+    }
+    .six-positions{
+        grid-template-columns: repeat(auto-fill , minmax(270px, 1fr));
+    }
+    .six-option-txt1{
+        white-space: normal;
+    }
+    .six-option{
+        grid-template-columns: repeat(auto-fill , minmax(240px, 1fr));
+    }
 }
