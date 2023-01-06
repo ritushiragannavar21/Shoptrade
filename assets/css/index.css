@@ -63,10 +63,6 @@ body{
 .six-option-txt1,.six-option-txt2,.txt1, .txt2{
     color: var(--white-color);
 }
-
-.view,a:hover,.text-with-background{
-    color: var(--orange-color);
-}
 .flex-container{
     width: 100%;
     display: flex;
@@ -105,35 +101,30 @@ html{
     color: #5B5B5B;
     margin-top: 37px;
 }
-.front-hover {
+
+/* 
+ .front-hover {
     padding-left: 11px;
-    overflow: visible;
-    transition: all 0.2s linear;
-}
-.front-hover path:hover{
-    fill: var(--orange-color); 
-    transform: translate3d(0, 0, 10px);
-}
+    position: relative;
+} */
+/* .svg-arrow:hover{
+    fill: var(--orange-color);  */
+    
+    /* animation: mymove 5s;
+    animation-fill-mode: forwards; 
+} */
+/* @keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+  } */
 
     /* transition: all 1s ease;
     animation: arrow-anim 5s ease infinite;
    
 }
-@keyframes arrow-anim {
-	0% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-	5% {
-		transform: translateX(-0.1rem);
-	}
-	100% {
-		transform: translateX(1rem);
-		opacity: 0;
-	}
-} */
+*/
 
-.text-part  a{
+.view{
     background: var(--orange-color);
     border: 1px solid #ED4E08;
     border-radius: 10px;
@@ -142,19 +133,45 @@ html{
     height: 78px;
     margin-top: 41px;
     text-decoration: none;
+    transition: all 0.3s ease-in;
     font-weight:var(--weight-600);
     color: var(--white-color);
 }
-.text-part a:hover {
+
+.view-arrow{
+    padding-left: 11px;
+    display: inline-block;
+    /* transform: translateX(0px); */
+    transition: all 0.3s ease-in;
+}
+.view:hover .view-arrow{
+    transform: translateX(10px);
+}
+.view:hover {
     border: 1px solid #ED4E08;
     text-decoration: underline;
     color:var(--orange-color);
     background: var(--white-color);
+  
+}
+.view:hover .view-arrow svg path{
+    fill: var(--orange-color);
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
+
+
+/* a .svg-arrow:hover{
+    padding-left: 11px;
+    border: none !important;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    text-decoration: none !important;
+    position: relative;
+    fill: var(--orange-color);
+} */
 
 /* --------------------text with background color---------------- */
 .text-with-background{
@@ -183,8 +200,10 @@ html{
     text-decoration-line: underline;
 }
 .text3:hover{
-    text-decoration: none;
-    color: var(--white-color);
+    text-decoration: none; 
+}
+.text3:hover .view-arrow{
+    transform: translateX(10px);
 }
 
 /* ---------Take the next big leap in your career!  text section------------- */
@@ -211,6 +230,7 @@ html{
 }
 .hiring-position{
     margin-top: 33px;
+    min-height: 460px;
 }
 .feature-Design-Engineer{
     display: flex;
@@ -232,24 +252,32 @@ html{
     /* color: var(--white-color); */
 }
 .six-positions{
-    display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
-    column-gap: 65px;
+
 }
 .position-grid{
     background: #F8F8F8;
     border-radius: 10px;
     min-height: 145px;
     margin-top: 51px;
+    
+}
+.six-positions{
     display: none;
 }
-.position-grid.tab-content-active{
+
+.six-positions.tab-content-active{
     display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
+    column-gap: 65px;
 }
 .position-grid:hover,.location:hover{
     background: var(--orange-color);
     color: var(--white-color);
    
+}
+.position-grid:hover .location{
+    color: #FFFFFF;
 }
 .heading,.location{
     font-weight: var(--weight-500);
@@ -260,7 +288,7 @@ html{
 }
 
 .heading{   
-    font-size: 20px;  
+    font-size: 20px; 
 }
 .location{
     font-weight: 500;
@@ -656,7 +684,7 @@ border-radius: 3px;
     .career{
         line-height: 30px;
     }
-    .six-positions{
+    .six-positions.tab-content-active{
         grid-template-columns: repeat(auto-fill , minmax(270px, 1fr));
     }
     .six-option-txt1{

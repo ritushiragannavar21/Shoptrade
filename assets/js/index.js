@@ -1,5 +1,5 @@
      const tabs=document.querySelectorAll('.tablinks');
-    const tabcontent=document.querySelectorAll('.position-grid');
+    const tabcontent=document.querySelectorAll('.six-positions');
         for(let i=0; i<tabs.length;i++){
  
         tabs[i].addEventListener("click",()=>{
