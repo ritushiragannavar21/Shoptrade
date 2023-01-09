@@ -17,7 +17,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 :root{
     --weight-500:500;
     --weight-600:600;
@@ -75,7 +74,6 @@ body{
 .text-part {
     padding-right: 100px;
     width: 60%;
-   
 }
 html{
     scroll-behavior: smooth;
@@ -101,29 +99,6 @@ html{
     color: #5B5B5B;
     margin-top: 37px;
 }
-
-/* 
- .front-hover {
-    padding-left: 11px;
-    position: relative;
-} */
-/* .svg-arrow:hover{
-    fill: var(--orange-color);  */
-    
-    /* animation: mymove 5s;
-    animation-fill-mode: forwards; 
-} */
-/* @keyframes mymove {
-    from {left: 0px;}
-    to {left: 20px;}
-  } */
-
-    /* transition: all 1s ease;
-    animation: arrow-anim 5s ease infinite;
-   
-}
-*/
-
 .view{
     background: var(--orange-color);
     border: 1px solid #ED4E08;
@@ -137,7 +112,6 @@ html{
     font-weight:var(--weight-600);
     color: var(--white-color);
 }
-
 .view-arrow{
     padding-left: 11px;
     display: inline-block;
@@ -152,7 +126,6 @@ html{
     text-decoration: underline;
     color:var(--orange-color);
     background: var(--white-color);
-  
 }
 .view:hover .view-arrow svg path{
     fill: var(--orange-color);
@@ -161,17 +134,6 @@ html{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
 }
-
-
-/* a .svg-arrow:hover{
-    padding-left: 11px;
-    border: none !important;
-    animation: mymove 5s;
-    animation-fill-mode: forwards;
-    text-decoration: none !important;
-    position: relative;
-    fill: var(--orange-color);
-} */
 
 /* --------------------text with background color---------------- */
 .text-with-background{
@@ -236,7 +198,7 @@ html{
     display: flex;
 }
 .feature-Design-Engineer p{
-    margin-left: 94px;
+    margin-right: 94px;
     font-size: 20px;
     width: 194px;
     height: 63px;
@@ -247,19 +209,16 @@ html{
     display: flex;
 }
 .tablinks.active{
-    box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.14);
+    box-shadow: 0px 2px 4px 1px rgba(57, 57, 57, 0.16);
     border-radius: 10px;
-    /* color: var(--white-color); */
 }
-.six-positions{
 
-}
 .position-grid{
     background: #F8F8F8;
     border-radius: 10px;
     min-height: 145px;
     margin-top: 51px;
-    
+    transition: all 0.3s ease-in;
 }
 .six-positions{
     display: none;
@@ -270,11 +229,11 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(350px, 1fr));
     column-gap: 65px;
+    transition: all 0.3s ease-in;
 }
 .position-grid:hover,.location:hover{
     background: var(--orange-color);
     color: var(--white-color);
-   
 }
 .position-grid:hover .location{
     color: #FFFFFF;
@@ -298,7 +257,6 @@ html{
     margin-left: 29px;
 }
 
-
 /* ---------why you wil love it text with background color  -------- */
 .sub-container{
     margin-left: 109px;
@@ -315,14 +273,12 @@ html{
     padding-top: 50px;
     line-height: 60px;
 }
-
 .six-option{
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(340px, 1fr));
     column-gap: 108px;
     margin-top: 69px;
     row-gap: 33px;
-  
 }
 .six-option-txt1{
     font-size: 22px;
@@ -419,10 +375,8 @@ html{
     color: rgba(0, 0, 0, 0.5);
 }
 .bg-clr{
-    /* width: 32px;
-height: 30px; */
-background: #D5D5D5;
-border-radius: 3px;
+    background: #D5D5D5;
+    border-radius: 3px;
 }
 
 /* ------------we cant wait to see your application text--------------- */
@@ -448,9 +402,11 @@ border-radius: 3px;
 }
 .txt2 span a{
     color: #000000;
+    text-decoration: none;
+    border: none;
 }
 .txt2 span a:hover{
-    text-decoration: none;
+    border-bottom: 1px solid #000000;
 }
 
 /* --------------------media query----------------- */
@@ -487,11 +443,15 @@ border-radius: 3px;
         padding-bottom: 30px !important;
     }
     .feature-Design-Engineer p{
-        margin-left: 45px;
+        margin-left: 10px;
+        margin-right: 5px;
     }
     .text-part a{
         margin: 0px auto;
         margin-top: 20px;
+    }
+    .hiring-position{
+        min-height: 651px;
     }
 }
 
@@ -507,7 +467,6 @@ border-radius: 3px;
     }
     .image-part{
          padding-top: 10px ;
-       /* margin: auto;  */ 
     }
     .text-part h1{
         margin-top: 30px;
@@ -528,7 +487,7 @@ border-radius: 3px;
         margin-top: 46px;
         padding-bottom: 0px !important;
         padding-left: 30px;
-        padding-right: 42px;
+        padding-right: 20px;
         background-color: var(--orange-color);
         color:var(--white-color);
     }
@@ -552,6 +511,7 @@ border-radius: 3px;
     }
     .feature-Design-Engineer p{
         margin-left: 20px;
+        font-size: 15px;
     }
     .head{
         font-size: 35px;
@@ -623,22 +583,36 @@ border-radius: 3px;
         line-height: 38px;
         margin-top: 10px;
     }
+    .slides{
+        min-height: 212px;
+        padding-bottom: 0px;
+    }
     .logo{
         margin-top: 26px;
     }
+    .image-part img{
+        width: 82%;;
+    }
     .text-part p,.text2,.text3{
         font-size: 15px;
+        line-height: 22.5px;
+    }
+    .career-desc, .six-option-txt2{
+        line-height: 22.5px;
     }
     .text-part  a{
         width: 255px;
         height: 54px;
         font-size: 15px;
     }
+    .slide-two{
+        display: none;
+    }
     .text1{
         font-size: 20px;
     }
     .text-with-background{
-        min-height: 350px;
+        min-height: 325px;
         padding-bottom: 34px !important;
     }
     .career{
@@ -650,6 +624,9 @@ border-radius: 3px;
     .hiring-position{
         margin-top: 20px;
     }
+    .testimonial-img-info{
+        padding-top: 21px;
+    }
     .position-grid{
         margin-top: 30px;
     }
@@ -659,6 +636,9 @@ border-radius: 3px;
     .position-grid{
         height: 105px;
         margin-top: 20px;
+    }
+    .test{
+        margin-top: 0px;
     }
     .reason-to-love-shoptrade{
         margin-top: 30px;
@@ -693,7 +673,20 @@ border-radius: 3px;
     .six-option{
         grid-template-columns: repeat(auto-fill , minmax(240px, 1fr));
     }
+    .wraap{
+        flex-direction: column;
+    }
+    .slides q{
+        line-height: 21px;
+    }
     .slideshow-container{
         grid-template-columns: repeat(auto-fill , minmax(200px, 1fr));
+        margin-top: 25px;
+    }
+    .heading{
+        margin-right: 30px;
+    }
+    .locate1,.locate2{
+        padding-bottom: 20px;
     }
 }
